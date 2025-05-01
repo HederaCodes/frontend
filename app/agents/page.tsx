@@ -186,7 +186,8 @@ export default function AgentsPage() {
                         
                         <div className="mt-3 flex justify-between items-center pt-3 border-t border-white/10">
                           <Link 
-                            href={`/agents/${agent.id}`}
+                            href={`https://moonscape.tech/openconvai/chat?targetId=${agent.id}`}
+                            target="_blank"
                             className="text-purple-400 hover:text-purple-300 text-xs font-medium flex items-center gap-1 transition-colors"
                           >
                             Details
@@ -391,7 +392,7 @@ export default function AgentsPage() {
                               
                               <div className="flex gap-3">
                                 <Link 
-                                  href={`/agents/${agent.id}`}
+                                  href={`https://moonscape.tech/openconvai/chat?targetId=${agent.id}`}
                                   className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center gap-1 transition-colors"
                                 >
                                   Details
