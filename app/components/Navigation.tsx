@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,7 +15,10 @@ export default function Navigation() {
     { name: "Home", href: "/" },
     { name: "Train", href: "/train" },
     { name: "Live", href: "/live" },
+    { name: "Explorer", href: "/explorer" },
+    { name: "Agents", href: "/agents" },
     { name: "History", href: "/history" },
+    { name: "Knowledge Cosmos", href: "/knowledge-cosmos" },
   ];
   
   useEffect(() => {
@@ -47,14 +51,15 @@ export default function Navigation() {
           >
             <Link href="/" className="flex items-center gap-2.5">
               <div className="relative">
-                <motion.span
-                  className="text-2xl"
-                  initial={{ rotate: 0 }}
-                  animate={{ rotate: [0, -10, 0, 10, 0] }}
-                  transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 4 }}
-                >
-                  👻
-                </motion.span>
+                <div className="w-8 h-8 overflow-hidden rounded-full border-2 border-blue-400">
+                  <Image 
+                    src="/logo.png" 
+                    alt="HederaCodes Logo" 
+                    width={32} 
+                    height={32} 
+                    className="object-cover"
+                  />
+                </div>
                 <motion.div 
                   className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-blue-500"
                   animate={{ 
@@ -73,7 +78,7 @@ export default function Navigation() {
                   <span className="bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">Hedera</span>
                   <span className="text-blue-400">Codes</span>
                 </span>
-                <span className="text-[9px] uppercase tracking-widest text-blue-300/80 -mt-1">AI Code Replicator</span>
+                <span className="text-[9px] uppercase tracking-widest text-blue-300/80 -mt-1">On Chain AI Code Assistant</span>
               </div>
             </Link>
           </motion.div>

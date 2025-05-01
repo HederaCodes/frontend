@@ -102,7 +102,7 @@ export default function Home() {
               <span className="animate-ping absolute h-2 w-2 rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Introducing AI-Powered Code Replication
+            On-Chain AI Agents powered by Hedera
           </motion.div>
           
           {/* Main title with premium styling */}
@@ -132,9 +132,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            Your personalized AI assistant that learns from your coding style and helps generate code
-            <span className="font-medium italic text-white"> exactly </span>
-            the way you would write it.
+            Your personalized AI assistant with on-chain agents using
+            <span className="font-medium text-white"> HCS 10 and HIP 991-compliant </span>
+            monetization on the Hedera Testnet.
           </motion.p>
           
           <motion.div 
@@ -150,11 +150,11 @@ export default function Home() {
               </svg>
             </Link>
             
-            <Link href="/live" className="btn-secondary flex items-center justify-center gap-2 group sm:min-w-[180px]">
+            <Link href="/agents" className="btn-secondary flex items-center justify-center gap-2 group sm:min-w-[180px]">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
               </svg>
-              <span>Live Demo</span>
+              <span>Explore Agents</span>
             </Link>
           </motion.div>
         </motion.div>
@@ -165,8 +165,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <FadeInSlide className="mb-16 text-center">
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">How it works</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-5">Your Code, <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">Your Style</span></h2>
-            <p className="text-white/70 max-w-2xl mx-auto text-lg">HederaCodes uses advanced AI to understand your unique coding patterns and preferences</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-5">On-Chain <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">AI Agents</span></h2>
+            <p className="text-white/70 max-w-2xl mx-auto text-lg">Powered by Hedera Consensus Service (HCS 10) and HIP 991-compliant monetization</p>
           </FadeInSlide>
           
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -179,9 +179,9 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-white mb-2 flex items-center">
                 <span className="text-blue-300 mr-2">01.</span>
-                Train
+                HCS Integration
               </h3>
-              <p className="text-white/70 leading-relaxed">Upload your code files and let HederaCodes analyze your unique coding style, patterns, and preferences. The more examples you provide, the more accurate the AI becomes.</p>
+              <p className="text-white/70 leading-relaxed">Leverage Hedera Consensus Service (HCS 10) for immutable logging of AI agent actions, ensuring full transparency and auditability on the Hedera Testnet.</p>
             </div>
             
             {/* Feature 2 */}
@@ -193,9 +193,9 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-white mb-2 flex items-center">
                 <span className="text-purple-300 mr-2">02.</span>
-                Interact
+                HIP 991 Compliance
               </h3>
-              <p className="text-white/70 leading-relaxed">Test HederaCodes by providing code challenges or requirements. Watch as it generates code that mirrors your style, formatting preferences, naming conventions, and problem-solving approaches.</p>
+              <p className="text-white/70 leading-relaxed">Build agents that are compliant with HIP 991 standard, enabling monetization and sustainable economics for your customized AI coding assistants.</p>
             </div>
             
             {/* Feature 3 */}
@@ -207,28 +207,28 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-white mb-2 flex items-center">
                 <span className="text-teal-300 mr-2">03.</span>
-                Create
+                Decentralized Network
               </h3>
-              <p className="text-white/70 leading-relaxed">Boost your productivity with an AI assistant that thinks and codes like you. Use HederaCodes to generate boilerplate, solve complex problems, or prototype new features—all in your signature style.</p>
+              <p className="text-white/70 leading-relaxed">Deploy your AI agents to the Hedera Testnet, enabling collaborative learning while maintaining full control of your intellectual property through on-chain verification.</p>
             </div>
           </StaggerContainer>
           
           {/* Code demo */}
           <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <FadeInSlide direction="right" once={false}>
+            <FadeInSlide direction="right">
               <div className="space-y-6">
-                <span className="badge badge-blue">LIVE PREVIEW</span>
-                <h3 className="text-3xl font-bold text-white">Code That Feels Like <span className="text-blue-300">Your Own</span></h3>
+                <span className="badge badge-blue">HEDERA POWERED AI</span>
+                <h3 className="text-3xl font-bold text-white">On-Chain <span className="text-blue-300">Intelligence</span></h3>
                 <p className="text-white/70 leading-relaxed">
-                  HederaCodes doesn&apos;t just generate generic solutions. It learns your unique coding fingerprint—from your preferred variable naming to your approach to error handling and commenting style.
+                  HederaCodes leverages the Hedera network to create verifiable and transparent AI agents that learn your coding style while maintaining a complete audit trail on the blockchain.
                 </p>
                 <ul className="space-y-2">
                   {[
-                    "Personalized naming conventions",
-                    "Your preferred code structure",
-                    "Customized error handling patterns",
-                    "Comment style and documentation approach",
-                    "Consistent with your programming paradigms"
+                    "Trusted execution recorded on HCS",
+                    "HIP 991-compliant for monetization",
+                    "Full audit trail of agent training",
+                    "Testnet deployment for rapid iteration",
+                    "Sustainable economics through HIP 991"
                   ].map((item, i) => (
                     <motion.li 
                       key={i}
@@ -246,8 +246,8 @@ export default function Home() {
                   ))}
                 </ul>
                 <div>
-                  <Link href="/train" className="text-blue-300 font-medium flex items-center gap-1 group hover:text-blue-200">
-                    <span>Start training your AI</span>
+                  <Link href="/agents" className="text-blue-300 font-medium flex items-center gap-1 group hover:text-blue-200">
+                    <span>Explore Hedera-powered agents</span>
                     <svg 
                       className="w-4 h-4 group-hover:translate-x-1 transition-transform" 
                       fill="none" 
@@ -261,7 +261,7 @@ export default function Home() {
               </div>
             </FadeInSlide>
             
-            <FadeInSlide direction="left" once={false} delay={0.3}>
+            <FadeInSlide direction="left">
               <div className="code-block rounded-xl overflow-hidden bg-slate-900 border border-slate-700/50 shadow-2xl shadow-blue-900/10">
                 {/* Code editor header */}
                 <div className="flex items-center justify-between bg-slate-800 px-4 py-2 border-b border-slate-700/50">
@@ -271,10 +271,10 @@ export default function Home() {
                       <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                       <div className="w-3 h-3 rounded-full bg-green-400"></div>
                     </div>
-                    <span className="text-xs text-slate-400">generatedCode.js</span>
+                    <span className="text-xs text-slate-400">hederaAgent.js</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-xs px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">Your style</span>
+                    <span className="text-xs px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">Hedera Testnet</span>
                   </div>
                 </div>
                 
@@ -297,7 +297,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.6, duration: 0.5 }}
                     >
-                      <span className="text-slate-500"> * Processes user data according to specified requirements.</span>
+                      <span className="text-slate-500"> * HederaAgent class using HCS and HIP 991</span>
                     </motion.span>
                     <motion.span 
                       className="block"
@@ -315,7 +315,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.8, duration: 0.5 }}
                     >
-                      <span className="text-slate-500"> * @param {"{Object}"} userData - The user data to process</span>
+                      <span className="text-slate-500"> * @param {"{Object}"} config - Agent configuration</span>
                     </motion.span>
                     <motion.span 
                       className="block"
@@ -324,7 +324,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.9, duration: 0.5 }}
                     >
-                      <span className="text-slate-500"> * @param {"{Object}"} options - Processing options</span>
+                      <span className="text-slate-500"> * @param {"{string}"} hederaTopicId - HCS topic ID</span>
                     </motion.span>
                     <motion.span 
                       className="block"
@@ -333,7 +333,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 1, duration: 0.5 }}
                     >
-                      <span className="text-slate-500"> * @returns {"{Object}"} Processed data</span>
+                      <span className="text-slate-500"> * @param {"{string}"} tokenId - HIP 991 token ID</span>
                     </motion.span>
                     <motion.span 
                       className="block"
@@ -351,7 +351,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 1.2, duration: 0.5 }}
                     >
-                      <span className="text-blue-300">function</span> <span className="text-yellow-200">processUserData</span>(userData, options = {"{}"}) {"{"}
+                      <span className="text-blue-300">import</span> {"{"}
                     </motion.span>
                     <motion.span 
                       className="block pl-4"
@@ -360,52 +360,52 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 1.3, duration: 0.5 }}
                     >
-                      <span className="text-blue-300">const</span> {"{"}
-                    </motion.span>
-                    <motion.span 
-                      className="block pl-8"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 1.4, duration: 0.5 }}
-                    >
-                      sanitizeInput = <span className="text-orange-300">true</span>,
-                    </motion.span>
-                    <motion.span 
-                      className="block pl-8"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 1.5, duration: 0.5 }}
-                    >
-                      normalizeOutput = <span className="text-orange-300">false</span>,
-                    </motion.span>
-                    <motion.span 
-                      className="block pl-8"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 1.6, duration: 0.5 }}
-                    >
-                      debug = <span className="text-orange-300">false</span>
+                      <span className="text-blue-400">TopicCreateTransaction</span>,
                     </motion.span>
                     <motion.span 
                       className="block pl-4"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
-                      transition={{ delay: 1.7, duration: 0.5 }}
+                      transition={{ delay: 1.4, duration: 0.5 }}
                     >
-                      {"}"} = options;
+                      <span className="text-blue-400">TopicMessageSubmitTransaction</span>,
                     </motion.span>
                     <motion.span 
-                      className="block mt-3 pl-4"
+                      className="block pl-4"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 1.5, duration: 0.5 }}
+                    >
+                      <span className="text-blue-400">TokenCreateTransaction</span>,
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-4"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 1.6, duration: 0.5 }}
+                    >
+                      <span className="text-blue-400">Client</span>
+                    </motion.span>
+                    <motion.span 
+                      className="block"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 1.7, duration: 0.5 }}
+                    >
+                      {"}"} <span className="text-blue-300">from</span> <span className="text-green-300">&quot;@hashgraph/sdk&quot;</span>;
+                    </motion.span>
+                    <motion.span 
+                      className="block mt-3"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 1.8, duration: 0.5 }}
                     >
-                      {/* Input validation */}
+                      <span className="text-blue-300">class</span> <span className="text-yellow-200">HederaAgent</span> {"{"}
                     </motion.span>
                     <motion.span 
                       className="block pl-4"
@@ -414,7 +414,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 1.9, duration: 0.5 }}
                     >
-                      <span className="text-blue-300">if</span> (!userData || <span className="text-blue-300">typeof</span> userData !== <span className="text-green-300">&apos;object&apos;</span>) {"{"}
+                      <span className="text-blue-300">constructor</span>(config, hederaTopicId, tokenId) {"{"}
                     </motion.span>
                     <motion.span 
                       className="block pl-8"
@@ -423,34 +423,34 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 2, duration: 0.5 }}
                     >
-                      <span className="text-red-300">throw</span> <span className="text-blue-300">new</span> <span className="text-yellow-200">Error</span>(<span className="text-green-300">&apos;Invalid user data provided&apos;</span>);
+                      <span className="text-red-300">this</span>.config = config;
                     </motion.span>
                     <motion.span 
-                      className="block pl-4"
+                      className="block pl-8"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 2.1, duration: 0.5 }}
                     >
-                      {"}"}
+                      <span className="text-red-300">this</span>.hederaTopicId = hederaTopicId;
                     </motion.span>
                     <motion.span 
-                      className="block mt-3 pl-4"
+                      className="block pl-8"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 2.2, duration: 0.5 }}
                     >
-                      debug && <span className="text-yellow-200">console</span>.<span className="text-blue-300">log</span>(<span className="text-green-300">&apos;Processing user data:&apos;</span>, userData);
+                      <span className="text-red-300">this</span>.tokenId = tokenId;
                     </motion.span>
                     <motion.span 
-                      className="block mt-3 pl-4"
+                      className="block pl-8"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 2.3, duration: 0.5 }}
                     >
-                      {/* Apply processing logic */}
+                      <span className="text-red-300">this</span>.client = <span className="text-yellow-200">Client</span>.<span className="text-blue-300">forTestnet</span>();
                     </motion.span>
                     <motion.span 
                       className="block pl-4"
@@ -459,16 +459,16 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 2.4, duration: 0.5 }}
                     >
-                      <span className="text-blue-300">const</span> processedData = sanitizeInput
+                      {"}"}
                     </motion.span>
                     <motion.span 
-                      className="block pl-8"
+                      className="block mt-3 pl-4"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 2.5, duration: 0.5 }}
                     >
-                      ? <span className="text-yellow-200">_sanitizeUserData</span>(userData)
+                      <span className="text-blue-300">async</span> <span className="text-yellow-200">generateCode</span>(prompt) {"{"}
                     </motion.span>
                     <motion.span 
                       className="block pl-8"
@@ -477,16 +477,16 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 2.6, duration: 0.5 }}
                     >
-                      : {"{"} ...userData {"}"};
+                      <span className="text-blue-300">const</span> codeResult = <span className="text-blue-300">await</span> <span className="text-red-300">this</span>._runInference(prompt);
                     </motion.span>
                     <motion.span 
-                      className="block mt-3 pl-4"
+                      className="block pl-8"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 2.7, duration: 0.5 }}
                     >
-                      <span className="text-blue-300">return</span> {"{"}
+                      <span className="text-blue-300">await</span> <span className="text-red-300">this</span>.logToHCS(prompt, codeResult);
                     </motion.span>
                     <motion.span 
                       className="block pl-8"
@@ -495,32 +495,131 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: 2.8, duration: 0.5 }}
                     >
-                      ...processedData,
-                    </motion.span>
-                    <motion.span 
-                      className="block pl-8"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 2.9, duration: 0.5 }}
-                    >
-                      processedAt: <span className="text-blue-300">new</span> <span className="text-yellow-200">Date</span>().<span className="text-blue-300">toISOString</span>(),
+                      <span className="text-blue-300">return</span> codeResult;
                     </motion.span>
                     <motion.span 
                       className="block pl-4"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
+                      transition={{ delay: 2.9, duration: 0.5 }}
+                    >
+                      {"}"}
+                    </motion.span>
+                    <motion.span 
+                      className="block mt-3 pl-4"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
                       transition={{ delay: 3, duration: 0.5 }}
                     >
-                      {"}"};
+                      <span className="text-blue-300">async</span> <span className="text-yellow-200">logToHCS</span>(prompt, result) {"{"}
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-8"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.1, duration: 0.5 }}
+                    >
+                      <span className="text-blue-300">const</span> message = JSON.stringify({"{"}
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.2, duration: 0.5 }}
+                    >
+                      timestamp: <span className="text-blue-300">new</span> <span className="text-yellow-200">Date</span>().toISOString(),
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.3, duration: 0.5 }}
+                    >
+                      tokenId: <span className="text-red-300">this</span>.tokenId,
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.4, duration: 0.5 }}
+                    >
+                      prompt,
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.5, duration: 0.5 }}
+                    >
+                      resultHash: <span className="text-yellow-200">this._hashResult</span>(result)
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-8"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.6, duration: 0.5 }}
+                    >
+                      {"}"});
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-8"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.7, duration: 0.5 }}
+                    >
+                      <span className="text-blue-300">const</span> transaction = <span className="text-blue-300">new</span> <span className="text-yellow-200">TopicMessageSubmitTransaction</span>()
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.8, duration: 0.5 }}
+                    >
+                      .setTopicId(<span className="text-red-300">this</span>.hederaTopicId)
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-12"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 3.9, duration: 0.5 }}
+                    >
+                      .setMessage(message);
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-8"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 4, duration: 0.5 }}
+                    >
+                      <span className="text-blue-300">await</span> transaction.execute(<span className="text-red-300">this</span>.client);
+                    </motion.span>
+                    <motion.span 
+                      className="block pl-4"
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 4.1, duration: 0.5 }}
+                    >
+                      {"}"}
                     </motion.span>
                     <motion.span 
                       className="block"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
-                      transition={{ delay: 3.1, duration: 0.5 }}
+                      transition={{ delay: 4.2, duration: 0.5 }}
                     >
                       {"}"}
                     </motion.span>
@@ -536,14 +635,14 @@ export default function Home() {
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
           <FadeInSlide>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to meet your <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">digital coding twin</span>?</h2>
-            <p className="text-xl text-white/70 mb-10 max-w-3xl mx-auto">Start training your personalized AI assistant today and experience the future of coding. HederaCodes adapts to your style, not the other way around.</p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to use <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">on-chain AI agents</span>?</h2>
+            <p className="text-xl text-white/70 mb-10 max-w-3xl mx-auto">Start training your HederaCodes AI agent today and experience the power of on-chain AI with HCS 10 and HIP 991 on the Hedera Testnet.</p>
             
             <Link 
-              href="/train"
+              href="/agents/create"
               className="inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white px-8 py-4 rounded-lg shadow-lg shadow-blue-900/30 text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/40"
             >
-              <span>Get Started for Free</span>
+              <span>Create Your Agent</span>
               <motion.svg
                 className="ml-2 w-5 h-5"
                 animate={{ x: [0, 5, 0] }}
@@ -556,7 +655,7 @@ export default function Home() {
               </motion.svg>
             </Link>
             
-            <div className="mt-6 text-white/50 text-sm">No credit card required</div>
+            <div className="mt-6 text-white/50 text-sm">Powered by Hedera Testnet</div>
           </FadeInSlide>
         </div>
       </section>

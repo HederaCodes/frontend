@@ -348,3 +348,18 @@ code, pre {
     max-width: 1536px;
   }
 }
+/* styles.css */
+:root {
+  --sh-background: #0d1117;
+  --sh-default: #c9d1d9;
+
+  --sh-class: #79c0ff;          /* Class names - bright cyan-blue */
+  --sh-identifier: #d2a8ff;     /* Variables/functions - soft purple */
+  --sh-sign: #8b949e;           /* Punctuation - grayish */
+  --sh-property: #ffa657;       /* Object keys/properties - orange */
+  --sh-entity: #7ee787;         /* Constants/enums - greenish */
+  --sh-jsxliterals: #ff7b72;   /* JSX elements/tags - coral */
+  --sh-string: #a5d6ff;         /* Strings - light blue */
+  --sh-keyword: #ff7b72;        /* Keywords (return, if, etc.) - coral */
+  --sh-comment: #6e7681;        /* Comments - muted gray */
+}
