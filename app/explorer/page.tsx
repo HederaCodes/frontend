@@ -122,7 +122,9 @@ export default function ExplorerPage() {
   // Fetch content of a generated file
   const fetchFileContent = async (filePath: string): Promise<string> => {
     try {
-      const response = await fetch(`/api/code-files?path=${encodeURIComponent(filePath)}`);
+      // Call the backend directly instead of going through the API route
+      const backendUrl = 'http://localhost:8000/api/code-files';
+      const response = await fetch(`${backendUrl}?path=${encodeURIComponent(filePath)}`);
       
       if (!response.ok) {
         throw new Error(`Error fetching file: ${response.status}`);
@@ -153,8 +155,9 @@ export default function ExplorerPage() {
       setError("");
       setGenerationResponse("");
       
-      // Call the code-agent endpoint using Fetch API
-      const response = await fetch('/api/assistant/code-agent', {
+      // Call the backend API directly
+      const backendUrl = 'http://localhost:8000/api/assistant/code-agent';
+      const response = await fetch(backendUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -282,7 +285,9 @@ export default function ExplorerPage() {
       console.log("Fetching generated files...");
       setIsGenerating(true);
       
-      const response = await fetch('/api/code-files/list', {
+      // Call the backend directly instead of going through the API route
+      const backendUrl = 'http://localhost:8000/api/code-files/list';
+      const response = await fetch(backendUrl, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
